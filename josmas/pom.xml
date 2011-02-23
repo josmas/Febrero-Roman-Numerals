@@ -16,7 +16,7 @@
             <!-- Behind a proxy? -->
             <!-- see http://wiki.github.com/aslakhellesoy/cuke4duke/installing-gems -->
             <!--  and http://github.com/aslakhellesoy/cuke4duke/issues/issue/36 -->
-            <http.proxy>http://gateway.tchpc.tcd.ie:8080</http.proxy>
+            <!-- http.proxy>proxy.port</http.proxy-->
     </properties>
     <repositories>
     <repository>
@@ -62,9 +62,9 @@
                                     <cucumberArg>${project.basedir}/target/test-classes</cucumberArg>
                                 </cucumberArgs>
                                 <gems>
-                                    <!--gem>install cuke4duke /-/-version ${cuke4duke.version}</gem-->
+                                    <gem>install cuke4duke --version ${cuke4duke.version}</gem>
                                     <!-- Behind a proxy? -->
-                                    <gem>install cuke4duke --version ${cuke4duke.version} --http-proxy ${http.proxy}</gem>
+                                    <!--gem>install cuke4duke --version ${cuke4duke.version} --http-proxy ${http.proxy}</gem-->
                                 </gems>
                             </configuration>
                     <executions>
