@@ -12,6 +12,18 @@ This way I hope to keep at it!
 I also intend to push to git 2 versions of the kata (maybe more), my first attempt at it, and another version when I have been
 practicing it for a while. I hope to be able to compare and see an evolution from it.
 
+-- Running the specs: //TODO will have to clean this up but only got cuke4duke working now
+A full install of JRuby is needed (changing soon to a maven project)
+I am using jruby installed through rvm.
+
+Compile all the step definitions with:
+javac -cp ~/.rvm/gems/jruby-1.5.6/gems/cuke4duke-0.4.3/lib/cuke4duke-0.4.3.jar features/step_definitons/cukes/*.java
+
+To execute the specs use somehting like (modify paths accordingly):
+cuke4duke --jars lib/ --require features/step_definitons/ --require ~/.rvm/gems/jruby-1.5.6/gems/cuke4duke-0.4.3/lib/cuke4duke-0.4.3.jar features
+To run from command line, Pico container is needed in lib, and a full JRuby installation is needed too. 
+Can install everything through maven and run specs as part of a target, but for now, this is good enough!
+
 Peligro! --> esta kata contiene Java!
 La kata ha sido desarrollada con Java y maven. Para construir el proyecto, usando 'mvn install' o 'mvn test' debería ser suficiente.
 
