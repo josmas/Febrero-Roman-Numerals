@@ -64,7 +64,7 @@
                                 <gems>
                                     <gem>install cuke4duke --version ${cuke4duke.version}</gem>
                                     <!-- Behind a proxy? -->
-                                    <!--gem>install cuke4duke --version ${cuke4duke.version} --http-proxy ${http.proxy}</gem-->
+                                    <!--gem>install cuke4duke -/-version ${cuke4duke.version} -/-http-proxy ${http.proxy}</gem-->
                                 </gems>
                             </configuration>
                     <executions>
