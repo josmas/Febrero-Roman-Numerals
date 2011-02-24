@@ -14,11 +14,12 @@ practicing it for a while. I hope to be able to compare and see an evolution fro
 
 -- Running the specs: 
 Cucumber features and cuke4duke execution is handled in the maven pom. To run features do:
-mvn integration-test   // For all tests to run
+# Bootstrapping the system (only the first time): mvn -Dcucumber.installGems=true integration-test
+mvn integration-test   // For all tests to run (also needed to compile everything, at least the first time)
 mvn cuke4duke:cucumber // To run just cucumber features
 
 Cucumber features are stored in the features folder.
-Step definitions are stored in the test stepdefinition package.
+Step definitions are stored in the test folder, stepdefinitions package.
 
 Peligro! --> esta kata contiene Java!
 La kata ha sido desarrollada con Java y maven. Para construir el proyecto, usando 'mvn install' o 'mvn test' debería ser suficiente.
