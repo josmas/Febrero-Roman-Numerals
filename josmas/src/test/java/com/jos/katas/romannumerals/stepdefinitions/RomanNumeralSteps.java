@@ -13,7 +13,7 @@ public class RomanNumeralSteps {
 	private String roman = "";
 	
     @Given("a number in arabic such as (\\d+)")
-    public void arabicToRoman(int arabic){;
+    public void arabicToRoman(int arabic){
     	this.arabic = arabic;
     }
     
