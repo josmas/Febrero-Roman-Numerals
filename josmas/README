@@ -14,7 +14,8 @@ practicing it for a while. I hope to be able to compare and see an evolution fro
 
 -- Running the specs: 
 Cucumber features and cuke4duke execution is handled in the maven pom. To run features do:
-# Bootstrapping the system (only the first time): mvn -Dcucumber.installGems=true integration-test
+# Bootstrapping the system (only needed the first time, but it will take a while to download an install): 
+mvn -Dcucumber.installGems=true integration-test
 mvn integration-test   // For all tests to run (also needed to compile everything, at least the first time)
 mvn cuke4duke:cucumber // To run just cucumber features
 
